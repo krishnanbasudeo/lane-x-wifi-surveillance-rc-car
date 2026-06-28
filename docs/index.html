@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lane X – Wi-Fi Surveillance RC Car</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">Lane X</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#hardware">Hardware</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#team">Team</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="badge">3rd Place Winner – KIIT Electrical Expo</p>
+        <h1>Wi-Fi Enabled Surveillance RC Car</h1>
+        <p>
+          A compact robotic vehicle built using ESP32, camera streaming,
+          web server control, motor driver circuitry and MIT App Inventor.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="assets/Lane-X-Report.pdf" class="btn primary" target="_blank">View Report</a>
+          <a href="#gallery" class="btn secondary">View Project</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="assets/project-photo.jpg" alt="Lane X RC Car" />
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <h2>About the Project</h2>
+    <p>
+      Lane X is a Wi-Fi controlled surveillance RC car designed to demonstrate
+      real-time wireless control, embedded system integration and live visual
+      monitoring. The vehicle can be controlled through a mobile application
+      and a web interface.
+    </p>
+    <p>
+      The ESP32 works as the main controller and hosts the wireless/web control
+      interface. It receives movement commands and controls the motors, lights
+      and camera-based surveillance functions.
+    </p>
+  </section>
+
+  <section id="features" class="section dark">
+    <h2>Key Features</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Wi-Fi Control</h3>
+        <p>Operates wirelessly using ESP32-based communication.</p>
+      </div>
+
+      <div class="card">
+        <h3>Camera Streaming</h3>
+        <p>Supports visual monitoring through the camera module.</p>
+      </div>
+
+      <div class="card">
+        <h3>Web Server Interface</h3>
+        <p>Allows browser-based control of movement and functions.</p>
+      </div>
+
+      <div class="card">
+        <h3>Mobile App Control</h3>
+        <p>MIT App Inventor app provides movement and speed control.</p>
+      </div>
+
+      <div class="card">
+        <h3>Speed Control</h3>
+        <p>Speed can be adjusted for controlled movement.</p>
+      </div>
+
+      <div class="card">
+        <h3>LED Control</h3>
+        <p>Front and back lights can be controlled from the interface.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="hardware" class="section">
+    <h2>Hardware and Software Used</h2>
+
+    <div class="two-column">
+      <div>
+        <h3>Hardware</h3>
+        <ul>
+          <li>ESP32 S3 Sense / ESP32 Camera Board</li>
+          <li>Motor Driver</li>
+          <li>4 DC Coreless Motors</li>
+          <li>2 Li-ion Batteries</li>
+          <li>LEDs</li>
+          <li>Connecting Wires</li>
+          <li>RC Car Chassis and Wheels</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Software</h3>
+        <ul>
+          <li>Arduino IDE</li>
+          <li>ESP32 Board Package</li>
+          <li>MIT App Inventor</li>
+          <li>HTML, CSS and JavaScript</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark">
+    <h2>How It Works</h2>
+    <p>
+      The ESP32 creates a wireless control environment and hosts a web server.
+      The mobile app or browser sends commands such as forward, backward, left,
+      right and stop. The ESP32 processes these commands and drives the motors
+      through the motor driver. The camera provides live visual feedback for
+      inspection and surveillance.
+    </p>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>Project Gallery</h2>
+
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="assets/project-photo.jpg" alt="Project Photo" />
+        <h3>Final Prototype</h3>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/circuit-diagram.png" alt="Circuit Diagram" />
+        <h3>Circuit Diagram</h3>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/flowchart.png" alt="Flowchart" />
+        <h3>Hardware Flowchart</h3>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/app-ui.png" alt="App UI" />
+        <h3>MIT App Inventor UI</h3>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/code-blocks.png" alt="Code Blocks" />
+        <h3>App Inventor Code Blocks</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark">
+    <h2>Real-Time Applications</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Mining Inspection</h3>
+        <p>Can be adapted for remote inspection of risky or inaccessible zones.</p>
+      </div>
+
+      <div class="card">
+        <h3>Warehouse Automation</h3>
+        <p>Can be used as a base concept for small automated guided vehicles.</p>
+      </div>
+
+      <div class="card">
+        <h3>Search and Rescue</h3>
+        <p>Can help inspect areas where human entry may be unsafe.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="team" class="section">
+    <h2>Team Members</h2>
+
+    <div class="team">
+      <div class="team-card">
+        <h3>Basudeo Krishnan</h3>
+        <p>Electronics and Electrical Engineering</p>
+      </div>
+
+      <div class="team-card">
+        <h3>Bhargavi Siva</h3>
+        <p>Electronics and Electrical Engineering</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Lane X – Wi-Fi Enabled Surveillance RC Car</p>
+    <p>Built for KIIT Electrical Expo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

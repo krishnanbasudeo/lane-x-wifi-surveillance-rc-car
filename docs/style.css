@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0b1020;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(0, 174, 255, 0.25), transparent 35%),
+    linear-gradient(135deg, #07111f, #101828);
+  padding: 24px 8%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 800;
+  color: #38bdf8;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: #dbeafe;
+  font-size: 15px;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(56, 189, 248, 0.14);
+  color: #7dd3fc;
+  border: 1px solid rgba(125, 211, 252, 0.35);
+  padding: 8px 14px;
+  border-radius: 999px;
+  margin-bottom: 22px;
+  font-size: 14px;
+}
+
+.hero h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  margin-bottom: 22px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #cbd5e1;
+  max-width: 680px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.btn {
+  padding: 13px 22px;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.primary {
+  background: #38bdf8;
+  color: #06121f;
+}
+
+.primary:hover {
+  background: #7dd3fc;
+}
+
+.secondary {
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.secondary:hover {
+  background: rgba(56, 189, 248, 0.12);
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 22px;
+  border: 1px solid rgba(125, 211, 252, 0.25);
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.45);
+}
+
+.section {
+  padding: 80px 8%;
+  background: #ffffff;
+  color: #111827;
+}
+
+.section.dark {
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.section h2 {
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+.section p {
+  font-size: 17px;
+  color: #475569;
+  max-width: 950px;
+  margin-bottom: 16px;
+}
+
+.section.dark p {
+  color: #cbd5e1;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #111827;
+  border: 1px solid rgba(125, 211, 252, 0.18);
+  padding: 24px;
+  border-radius: 18px;
+}
+
+.card h3 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+  font-size: 21px;
+}
+
+.card p {
+  color: #cbd5e1;
+  margin-bottom: 0;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 34px;
+  margin-top: 28px;
+}
+
+.two-column div {
+  background: #f8fafc;
+  padding: 28px;
+  border-radius: 18px;
+  border: 1px solid #e5e7eb;
+}
+
+.two-column h3 {
+  margin-bottom: 14px;
+  color: #0284c7;
+}
+
+.two-column ul {
+  padding-left: 22px;
+}
+
+.two-column li {
+  margin-bottom: 8px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-top: 28px;
+}
+
+.gallery-item {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 330px;
+  object-fit: contain;
+  background: #ffffff;
+  padding: 16px;
+}
+
+.gallery-item h3 {
+  padding: 18px;
+  color: #0f172a;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 28px;
+}
+
+.team-card {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 26px;
+}
+
+.team-card h3 {
+  color: #0284c7;
+  margin-bottom: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 34px 8%;
+  background: #020617;
+  color: #94a3b8;
+}
+
+@media (max-width: 900px) {
+  .hero-content,
+  .two-column,
+  .team {
+    grid-template-columns: 1fr;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .navbar {
+    margin-bottom: 44px;
+  }
+}
