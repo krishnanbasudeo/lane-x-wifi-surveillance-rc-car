@@ -1,0 +1,15 @@
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+
+.env
+secrets.h
+config_private.h
+
+.vscode/
+build/
+dist/
+
+*.zip
+*.rar
