@@ -24,8 +24,8 @@ The system supports:
 
 ## Team Members
 
-- Basudeo Krishnan
-- Bhargavi Siva
+- Basudeo Krishnan – [GitHub](https://github.com/krishnanbasudeo)
+- Bhargavi Siva – [GitHub](https://github.com/salty-rgb)
 
 ## Achievement
 
