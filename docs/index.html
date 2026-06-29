@@ -8,197 +8,359 @@
 </head>
 <body>
 
-  <header class="hero">
+  <canvas id="robotics-bg"></canvas>
+
+  <header class="hero" id="home">
     <nav class="navbar">
-      <div class="logo">Lane X</div>
+      <div class="logo">
+        <span class="logo-dot"></span>
+        Lane X
+      </div>
+
       <div class="nav-links">
         <a href="#about">About</a>
+        <a href="#demo">Demo</a>
         <a href="#features">Features</a>
-        <a href="#hardware">Hardware</a>
+        <a href="#working">Working</a>
         <a href="#gallery">Gallery</a>
         <a href="#team">Team</a>
       </div>
     </nav>
 
-    <div class="hero-content">
-      <div class="hero-text">
-        <p class="badge">3rd Place Winner – KIIT Electrical Expo</p>
-        <h1>Wi-Fi Enabled Surveillance RC Car</h1>
-        <p>
-          A compact robotic vehicle built using ESP32, camera streaming,
+    <div class="hero-grid">
+      <div class="hero-content reveal">
+        <p class="badge">🏆 3rd Place Winner – KIIT Electrical Expo</p>
+
+        <h1>
+          Wi-Fi Enabled
+          <span>Surveillance RC Car</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          A futuristic embedded robotics project built using ESP32, camera streaming,
           web server control, motor driver circuitry and MIT App Inventor.
         </p>
 
         <div class="hero-buttons">
-          <a href="assets/Lane-X-Report.pdf" class="btn primary" target="_blank">View Report</a>
-          <a href="#gallery" class="btn secondary">View Project</a>
+          <a href="#demo" class="btn primary">Watch Demo</a>
+          <a href="assets/Lane-X-Report.pdf" class="btn secondary" target="_blank">View Report</a>
         </div>
       </div>
 
-      <div class="hero-image">
-        <img src="assets/project-photo.jpg" alt="Lane X RC Car" />
+      <div class="hero-visual reveal">
+        <div class="image-orbit">
+          <div class="orbit-ring"></div>
+          <img src="assets/project-photo.jpg" alt="Lane X RC Car Prototype" />
+        </div>
       </div>
     </div>
   </header>
 
-  <section id="about" class="section">
-    <h2>About the Project</h2>
-    <p>
-      Lane X is a Wi-Fi controlled surveillance RC car designed to demonstrate
-      real-time wireless control, embedded system integration and live visual
-      monitoring. The vehicle can be controlled through a mobile application
-      and a web interface.
-    </p>
-    <p>
-      The ESP32 works as the main controller and hosts the wireless/web control
-      interface. It receives movement commands and controls the motors, lights
-      and camera-based surveillance functions.
-    </p>
-  </section>
+  <main>
 
-  <section id="features" class="section dark">
-    <h2>Key Features</h2>
-
-    <div class="cards">
-      <div class="card">
-        <h3>Wi-Fi Control</h3>
-        <p>Operates wirelessly using ESP32-based communication.</p>
+    <section id="about" class="section">
+      <div class="section-heading reveal">
+        <p class="section-tag">Project Overview</p>
+        <h2>Built for wireless mobility and real-time surveillance</h2>
       </div>
 
-      <div class="card">
-        <h3>Camera Streaming</h3>
-        <p>Supports visual monitoring through the camera module.</p>
+      <div class="about-grid">
+        <div class="glass-card reveal">
+          <h3>What is Lane X?</h3>
+          <p>
+            Lane X is a Wi-Fi controlled surveillance RC car designed to demonstrate
+            the integration of embedded systems, wireless control, live camera feedback
+            and mobile application based operation.
+          </p>
+        </div>
+
+        <div class="glass-card reveal">
+          <h3>Core Idea</h3>
+          <p>
+            The ESP32 works as the main controller. It handles movement commands,
+            camera streaming, light control and web server communication, allowing the
+            user to control the vehicle through a mobile app or browser.
+          </p>
+        </div>
+
+        <div class="glass-card reveal">
+          <h3>Why It Matters</h3>
+          <p>
+            The project shows how a compact low-cost rover can be used for inspection,
+            surveillance, education, robotics prototyping and areas where remote
+            visibility is required.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="demo" class="section dark-section">
+      <div class="section-heading reveal">
+        <p class="section-tag">Live Demonstration</p>
+        <h2>Project demo video</h2>
+        <p>
+          Watch the working demonstration of Lane X showing Wi-Fi control,
+          camera-based surveillance and real-time movement.
+        </p>
       </div>
 
-      <div class="card">
-        <h3>Web Server Interface</h3>
-        <p>Allows browser-based control of movement and functions.</p>
+      <div class="video-shell reveal">
+        <video controls>
+          <source src="assets/demo-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="section-heading reveal">
+        <p class="section-tag">Capabilities</p>
+        <h2>Key features of the system</h2>
       </div>
 
-      <div class="card">
-        <h3>Mobile App Control</h3>
-        <p>MIT App Inventor app provides movement and speed control.</p>
+      <div class="feature-grid">
+        <div class="feature-card reveal">
+          <div class="icon">📡</div>
+          <h3>Wi-Fi Control</h3>
+          <p>Wireless control through ESP32 using app and web based commands.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="icon">🎥</div>
+          <h3>Camera Streaming</h3>
+          <p>Live visual feedback for surveillance and remote inspection.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="icon">🌐</div>
+          <h3>Web Server</h3>
+          <p>Browser based access for controlling the RC car interface.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="icon">📱</div>
+          <h3>Mobile App</h3>
+          <p>MIT App Inventor based app for movement, lights and speed control.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="icon">⚙️</div>
+          <h3>Motor Control</h3>
+          <p>Four DC motors controlled through motor driver circuitry.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="icon">💡</div>
+          <h3>LED Control</h3>
+          <p>Front and rear lights controlled through GPIO signals.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="working" class="section dark-section">
+      <div class="section-heading reveal">
+        <p class="section-tag">System Logic</p>
+        <h2>How Lane X works</h2>
       </div>
 
-      <div class="card">
-        <h3>Speed Control</h3>
-        <p>Speed can be adjusted for controlled movement.</p>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <span>01</span>
+          <div>
+            <h3>ESP32 starts Wi-Fi and web server</h3>
+            <p>The ESP32 creates the communication environment and waits for user commands.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <span>02</span>
+          <div>
+            <h3>User connects through app or browser</h3>
+            <p>The mobile app or web page sends movement commands to the ESP32.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <span>03</span>
+          <div>
+            <h3>ESP32 processes movement commands</h3>
+            <p>Commands like forward, backward, left, right and stop are processed in real time.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <span>04</span>
+          <div>
+            <h3>Motor driver controls the car</h3>
+            <p>The motor driver receives signals from the ESP32 and drives the DC motors.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <span>05</span>
+          <div>
+            <h3>Camera provides visual feedback</h3>
+            <p>The camera stream helps the user monitor the surroundings while controlling the car.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading reveal">
+        <p class="section-tag">Technology Stack</p>
+        <h2>Hardware and software used</h2>
       </div>
 
-      <div class="card">
-        <h3>LED Control</h3>
-        <p>Front and back lights can be controlled from the interface.</p>
+      <div class="tech-grid">
+        <div class="tech-box reveal">
+          <h3>Hardware</h3>
+          <div class="chips">
+            <span>ESP32 S3 Sense</span>
+            <span>Motor Driver</span>
+            <span>DC Coreless Motors</span>
+            <span>Li-ion Batteries</span>
+            <span>LEDs</span>
+            <span>Wires</span>
+            <span>Chassis</span>
+            <span>Wheels</span>
+          </div>
+        </div>
+
+        <div class="tech-box reveal">
+          <h3>Software</h3>
+          <div class="chips">
+            <span>Arduino IDE</span>
+            <span>ESP32 Board Package</span>
+            <span>MIT App Inventor</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Web Server</span>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="hardware" class="section">
-    <h2>Hardware and Software Used</h2>
-
-    <div class="two-column">
-      <div>
-        <h3>Hardware</h3>
-        <ul>
-          <li>ESP32 S3 Sense / ESP32 Camera Board</li>
-          <li>Motor Driver</li>
-          <li>4 DC Coreless Motors</li>
-          <li>2 Li-ion Batteries</li>
-          <li>LEDs</li>
-          <li>Connecting Wires</li>
-          <li>RC Car Chassis and Wheels</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>Software</h3>
-        <ul>
-          <li>Arduino IDE</li>
-          <li>ESP32 Board Package</li>
-          <li>MIT App Inventor</li>
-          <li>HTML, CSS and JavaScript</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="section dark">
-    <h2>How It Works</h2>
-    <p>
-      The ESP32 creates a wireless control environment and hosts a web server.
-      The mobile app or browser sends commands such as forward, backward, left,
-      right and stop. The ESP32 processes these commands and drives the motors
-      through the motor driver. The camera provides live visual feedback for
-      inspection and surveillance.
-    </p>
-  </section>
-
-  <section id="gallery" class="section">
-    <h2>Project Gallery</h2>
-
-    <div class="gallery">
-      <div class="gallery-item">
-        <img src="assets/project-photo.jpg" alt="Project Photo" />
-        <h3>Final Prototype</h3>
+    <section id="gallery" class="section dark-section">
+      <div class="section-heading reveal">
+        <p class="section-tag">Visual Documentation</p>
+        <h2>Project gallery</h2>
       </div>
 
-      <div class="gallery-item">
-        <img src="assets/circuit-diagram.png" alt="Circuit Diagram" />
-        <h3>Circuit Diagram</h3>
+      <div class="gallery-grid">
+        <div class="gallery-card reveal">
+          <img src="assets/project-photo.jpg" alt="Lane X Prototype" />
+          <div>
+            <h3>Final Prototype</h3>
+            <p>Physical RC car prototype built for the expo.</p>
+          </div>
+        </div>
+
+        <div class="gallery-card reveal">
+          <img src="assets/circuit-diagram.png" alt="Circuit Diagram" />
+          <div>
+            <h3>Circuit Diagram</h3>
+            <p>Electrical wiring and control connections.</p>
+          </div>
+        </div>
+
+        <div class="gallery-card reveal">
+          <img src="assets/flowchart.png" alt="Flowchart" />
+          <div>
+            <h3>System Flowchart</h3>
+            <p>Flow of hardware and software operation.</p>
+          </div>
+        </div>
+
+        <div class="gallery-card reveal">
+          <img src="assets/app-ui.png" alt="MIT App Inventor UI" />
+          <div>
+            <h3>Mobile App UI</h3>
+            <p>App interface for controlling the RC car.</p>
+          </div>
+        </div>
+
+        <div class="gallery-card wide reveal">
+          <img src="assets/code-blocks.png" alt="MIT App Inventor Code Blocks" />
+          <div>
+            <h3>App Inventor Code Blocks</h3>
+            <p>Touch controls, speed control, lights and command logic.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading reveal">
+        <p class="section-tag">Real World Relevance</p>
+        <h2>Applications and industrial significance</h2>
       </div>
 
-      <div class="gallery-item">
-        <img src="assets/flowchart.png" alt="Flowchart" />
-        <h3>Hardware Flowchart</h3>
+      <div class="application-grid">
+        <div class="application-card reveal">
+          <h3>Mining Inspection</h3>
+          <p>
+            Can be adapted for inspecting hazardous or inaccessible areas where
+            human movement is risky.
+          </p>
+        </div>
+
+        <div class="application-card reveal">
+          <h3>Warehouse Automation</h3>
+          <p>
+            Can be used as a base concept for small automated guided vehicles
+            and inspection rovers.
+          </p>
+        </div>
+
+        <div class="application-card reveal">
+          <h3>Search and Rescue</h3>
+          <p>
+            Can support remote visibility in unsafe zones such as collapsed
+            structures or disaster affected locations.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="section dark-section">
+      <div class="section-heading reveal">
+        <p class="section-tag">Project Team</p>
+        <h2>Built by</h2>
       </div>
 
-      <div class="gallery-item">
-        <img src="assets/app-ui.png" alt="App UI" />
-        <h3>MIT App Inventor UI</h3>
+      <div class="team-grid">
+        <div class="team-card reveal">
+          <div class="avatar">BK</div>
+          <h3>Basudeo Krishnan</h3>
+          <p>B.Tech – Electronics and Electrical Engineering</p>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="avatar">BS</div>
+          <h3>Bhargavi Siva</h3>
+          <p>B.Tech – Electronics and Electrical Engineering</p>
+        </div>
       </div>
+    </section>
 
-      <div class="gallery-item">
-        <img src="assets/code-blocks.png" alt="Code Blocks" />
-        <h3>App Inventor Code Blocks</h3>
+    <section class="section final-cta">
+      <div class="cta-card reveal">
+        <h2>Explore the complete project</h2>
+        <p>
+          View the report, source files, circuit design, firmware and project documentation
+          from the GitHub repository.
+        </p>
+
+        <div class="hero-buttons center">
+          <a href="assets/Lane-X-Report.pdf" class="btn primary" target="_blank">Open Report</a>
+          <a href="#home" class="btn secondary">Back to Top</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section dark">
-    <h2>Real-Time Applications</h2>
-
-    <div class="cards">
-      <div class="card">
-        <h3>Mining Inspection</h3>
-        <p>Can be adapted for remote inspection of risky or inaccessible zones.</p>
-      </div>
-
-      <div class="card">
-        <h3>Warehouse Automation</h3>
-        <p>Can be used as a base concept for small automated guided vehicles.</p>
-      </div>
-
-      <div class="card">
-        <h3>Search and Rescue</h3>
-        <p>Can help inspect areas where human entry may be unsafe.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="team" class="section">
-    <h2>Team Members</h2>
-
-    <div class="team">
-      <div class="team-card">
-        <h3>Basudeo Krishnan</h3>
-        <p>Electronics and Electrical Engineering</p>
-      </div>
-
-      <div class="team-card">
-        <h3>Bhargavi Siva</h3>
-        <p>Electronics and Electrical Engineering</p>
-      </div>
-    </div>
-  </section>
+  </main>
 
   <footer>
     <p>Lane X – Wi-Fi Enabled Surveillance RC Car</p>
